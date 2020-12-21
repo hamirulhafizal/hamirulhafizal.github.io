@@ -199,7 +199,13 @@
               <h4 class="modal-title">Privacy Policy</h4>
             </div>
             <div class="modal-body">
-              <p>Some text in the modal.</p>
+             
+              <div style="height:300px;width:auto;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;  overflow-x: auto; white-space: nowrap;">
+                <p style="font-family: 'Montserrat';">
+                  <div id="div1"></div> 
+
+                </p>
+                </div>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -236,6 +242,15 @@
             // alert("text");
         }
     </script>
+
+    
+<script>
+  $(document).ready(function(){
+    $("#pp").click(function(){
+      $("#div1").load("pp/pp.html");
+    });
+  });
+  </script>
 
 </body>
 </html>
