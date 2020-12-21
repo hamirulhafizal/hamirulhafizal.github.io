@@ -67,7 +67,7 @@
                 <div class="container">
                     <div class="row align-items-center">
 
-                        <div class="col-md-5 y" style=" left: 7%;" >
+                        <div class="col-md-5 y" style="left: 7%;" >
                             <div class="mt-40 home-2-content">
                                 <h1 class="text-black font-weight-normal home-2-title display-5  mb-0" style="text-align: justify;"><b>Artists</b></h1>
                                
@@ -91,18 +91,21 @@
                                 <div class="mt-5">
                                         <!-- Default input name -->
                                         <form id="form-lg" onsubmit="HideForm()" >
-                                          <input type="hidden" name="artist" value="yes">
-                                          <input type="hidden" name="source" value="artist page 18 Dec 2020">
- 
+                                        <!-- <form id="form-lg" action="comment.php"> -->
                                             <div class="form-row">
                                                 <div class="form-group col-md-6">
-                                                  <input type="text" class="form-control col-form-label-sm" placeholder="First Name" name="first_name" value="" >
+                                                  <input type="text" class="form-control col-form-label-sm" id="inputPassword4" placeholder="First Name">
                                                 </div>
                                                 <div class="form-group col-md-6">
-                                                  <input type="text" class="form-control col-form-label-sm" placeholder="Last Name" name="last_name" value="">
+                                                  <input type="text" class="form-control col-form-label-sm" id="inputPassword4" placeholder="Last Name">
                                                 </div>
                                               </div>
-                                              <input type="email" placeholder="Email" class="form-control" name="email" value="" required >
+                                              <input type="email" id="defaultFormCardEmailEx" placeholder="Email" class="form-control" required >
+                                              <!-- <div class="form-check">
+                                                <br>
+                                                <input type="checkbox" class="form-check-input col-form-label-sm" id="exampleCheck1" required>
+                                                <label class="form-check-label" for="exampleCheck1" style="color: rgb(0, 0, 0); font-size: 95%;">I agree to the <a href="#" data-toggle="modal" data-target="#myModal">Terms and Conditions</a></label>
+                                              </div> -->
                                             <div class="text-center mt-3">
                                               <button class="btn btn-custom" type="submit" style = "float: left;">Sign Up<i
                                                   class="fa fa-paper-plane-o ml-2"></i></button> <br><br>
@@ -112,19 +115,25 @@
                                         <form id="form-mb" onsubmit="HideForm()">
                                             <div class="form-row" >
                                                 <div class="form-group" style="padding-inline-end: 2%;">
-                                                  <input type="text" class="form-control col-form-label-sm" placeholder="First Name" name="first_name" value="">
+                                                  <input type="text" class="form-control col-form-label-sm" id="inputPassword4" placeholder="First Name">
                                                 </div>
                                                 <div class="form-group">
-                                                  <input type="text" class="form-control col-form-label-sm" placeholder="Last Name" name="last_name" value="">
+                                                  <input type="text" class="form-control col-form-label-sm" id="inputPassword4" placeholder="Last Name">
                                                 </div>
                                               </div>
-                                              <input type="email" placeholder="Email" class="form-control" name="email" value="" required>
+                                              <input type="email" id="defaultFormCardEmailEx" placeholder="Email" class="form-control" required>
 
                                               <div style="display: inline-flex;">
                                                 <div class="text-center  mt-3">
                                                     <button class="btn btn-custom" type="submit" style = "float: left;">Sign Up<i
                                                     class="fa fa-paper-plane-o ml-2"></i></button> <br><br>
                                                 </div>
+                                                <!-- <div class="form-check"  style="width: 76%;padding-inline-start: 2em; text-align: justify;">
+                                                    <br>
+                                                    <input type="checkbox" class="form-check-input col-form-label-sm" id="exampleCheck1" required>
+                                                    <label class="form-check-label" for="exampleCheck1" style="color: rgb(0, 0, 0); font-size: 95%;">I agree to the <a href="#" data-toggle="modal" data-target="#myModal">Terms and Conditions</a></label>
+                                                </div> -->
+                                               
                                             </div>
                                         </form>
                                         <div id="msg" style="display: none;">
@@ -137,7 +146,7 @@
                         </div>                 
                         <!-- col end -->
 
-                        <div class="col-md-7 x" >
+                        <div class="col-md-7 x">
                             <div class="mt-40 home-2-content position-relative">
                                 <img src="images/home-3-img.jpg" alt="" class="img-fluid mx-auto d-block home-3-img responsive" >
                                 <div class="row" style="position: relative;right: -17%;width: 100%;" id="author-mb">
@@ -160,6 +169,27 @@
         </div>
     </section>
     <!-- HOME END -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+      
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header"style="display: inline-block;">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Terms Conditions</h4>
+          </div>
+          <div class="modal-body">
+            <p>Some text in the modal.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+        
+      </div>
+    </div>
 
      <!-- Modal -->
      <div class="modal fade" id="myModal-1" role="dialog">
