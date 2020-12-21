@@ -59,17 +59,16 @@ p {
 }
 
 @font-face{
-  font-family: "Montserrat";
-  src: url("/fonts/montserrat.woff") format("woff");
+  font-family: "Walkway";
+  src: url("/fonts/Walkway_bold.woff") format("woff");
 
 }
 
 @font-face{
-  font-family: "Walkway";
-  src: url("/fonts/walkway.woff") format("woff");
+  font-family: "Montserrat";
+  src: url("/fonts/montserrat-light.woff") format("woff");
 
 }
-
 
 
 
