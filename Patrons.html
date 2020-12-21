@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Minty.Art - pioneering digital patronage</title>
+    <title>Minty.Art</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Pioneering Digital Patronage" />
     <meta name="keywords" content="Ethereum , Cryptocurrency, Digital Art, Art Marketplace " />
@@ -25,6 +25,8 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
 <body style="background-color: black;">
@@ -69,8 +71,8 @@
                                 <img src="images/home-2-img.jpg" alt="" class="img-fluid mx-auto d-block home-2-img" >
                                 
                                 <div class="row" style="position: relative;right: 9%;width: 100%;" id="author-mb">
-                                    <div class="col-4" style=" POSITION: RELATIVE; left: 0%; ">
-                                        <p style="color: white;font-size: 78%;" data-toggle="modal" data-target="#myModal-1"><a href="#" style="color: white; font-family: 'Montserrat'"><u>Privacy Policy</u></a></p>
+                                    <div id="pp" class="col-4" style=" POSITION: RELATIVE; left: 0%; ">
+                                        <p  style="color: white;font-size: 78%;" data-toggle="modal" data-target="#myModal-1"><a href="#" style="color: white; font-family: 'Montserrat'"><u>Privacy Policy</u></a></p>
                                     </div>
                                     <div class="col-8"style="color: white;text-align: end;position: relative;right: 3%;" id="owner-1">
                                         <p style="color: white; font-size: 78%;  font-family: 'Montserrat'"><i>“Artwork by Tristan Eaton”</i> by Mike Von</p>
@@ -195,25 +197,10 @@
             </div>
             <div class="modal-body">
 
-              <div style="height:300px;width:auto;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;">
+              <div style="height:300px;width:auto;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;  overflow-x: auto; white-space: nowrap;">
                 <p style="font-family: 'Montserrat';">
-                  This Privacy Policy (“Policy”) describes how Minty.Art (“Minty” or “we” or “our” or “us”) collects, stores, shares and uses information and your choices about privacy when you use our website, products and services (collectively, “Services”). Your privacy is important to us, and we ask that you read this Policy carefully to be informed about our practices. If you see an undefined term in this Privacy Policy, it has the same definition as in our <a href=""> <u>T&Cs.</u></a> 
-                  <br>
-                  <br>
-                  This Policy is part of our T&Cs. Any capitalized terms that are used but not defined in this Policy have the same meaning given to them in our T&Cs. By accessing or using our Services in any way, you agree that your information may be collected, stored, shared, and used as described in this Policy and our T&Cs. 
-                  <br>
-                  <br>
-                  By submitting any Personal Information through our Site or by using our Services, you agree to the terms of this Privacy Policy and you expressly consent to the collection, use and disclosure of your Personal Information in accordance with this Policy. You may withdraw consent at any time in writing, however such withdrawal does not negate our right to process your data prior to your withdrawal. 
-                  <br>
-                  <br>
-                 <strong> WHEN THIS PRIVACY POLICY APPLIES</strong>
-                  <br>
-                  This Policy applies to all of our Services, regardless of how you use them, and whether or not you register for a Minty account. This Policy applies to how we collect, store, share, and use information. This Policy does not apply to any entity that we do not own or control, or to any person that we do not employ or manage. If, at any time during the course of using our Services, you are directed to a third-party site, you understand and agree that the policies of the third-party site govern.
-                  <br>
-                  <br>
-                  <strong>TYPES OF INFORMATION WE PROCESS</strong>
-                  <br>
-                  Information You Provide: We may collect the information that you provide (such as your username, email address, your public Web3 wallet address and your social media profile, if any) or otherwise make available to us when you access or use our Services, including when you:
+                  <div id="div1"><p></p></div> 
+
                 </p>
                 </div>
 
@@ -234,9 +221,18 @@
     <script src="js/scrollspy.min.js"></script>
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/anime.min.js"></script>
+    
 
     <!-- Main Js -->
     <script src="js/app.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $("#pp").click(function(){
+          $("#div1").load("pp/pp.html");
+        });
+      });
+      </script>
 
     <script type="text/javascript">
         function HideForm()
