@@ -60,14 +60,13 @@ p {
 
 @font-face{
   font-family: "Walkway";
-  src: url("../fonts/walkway.woff") format("woff");
+  src: url("/fonts/walkway.woff") format("woff");
 
 }
 
 @font-face{
   font-family: "Montserrat";
-  /* src: url("../fonts/montserrat.woff"); */
-  src: url("../fonts/montserrat.woff") format("woff");
+  src: url("/fonts/montserrat.woff") format("woff");
 
 }
 
@@ -1323,6 +1322,12 @@ p {
 
 .text-white-70 {
   color: rgb(255, 255, 255);
+  font-family: "Montserrat" ;
+  line-height: 19px;
+}
+
+.text-black-70 {
+  color: rgb(0, 0, 0);
   font-family: "Montserrat" ;
   line-height: 19px;
 }
