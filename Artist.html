@@ -10,20 +10,8 @@
     <!-- favicon -->
     <link rel="shortcut icon" href="images/Favicon-1.svg">
 
-    <!--Material Icon -->
-    <link rel="stylesheet" type="text/css" href="css/materialdesignicons.min.css" />
-
-    <!-- Pixeden Icon -->
-    <link rel="stylesheet" type="text/css" href="css/pe-icon-7.css" />
-
-    <!--Slider-->
-    <link rel="stylesheet" href="css/owl.carousel.css" />
-    <link rel="stylesheet" href="css/owl.theme.css" />
-    <link rel="stylesheet" href="css/owl.transitions.css" />
-
     <!-- css -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -52,7 +40,7 @@
     <!--Navbar Start-->
     <nav class="navbar" style="display: block;">
       <a class="navbar-brand" href="#">
-        <img src="images/minty-dark.png" alt="" height="20" class="logo-nav img-fluid">
+        <img src="images/minty-dark.svg" alt="" height="20" class="logo-nav img-fluid">
       </a>
     </nav>
     <!-- Navbar End -->
@@ -87,7 +75,7 @@
                                     </p>
                                 <div class="mt-5">
                                         <!-- Default input name -->
-                                        <form id="form-lg" onsubmit="HideForm()" >
+                                        <form id="form" onsubmit="HideForm()" >
                                           <input type="hidden" name="artist" value="yes">
                                           <input type="hidden" name="source" value="artist page 18 Dec 2020">
  
@@ -106,24 +94,6 @@
                                             </div>
                                         </form>
                                     <span>
-                                        <form id="form-mb" onsubmit="HideForm()">
-                                            <div class="form-row" >
-                                                <div class="form-group" style="padding-inline-end: 2%;">
-                                                  <input type="text" class="form-control col-form-label-sm" placeholder="First Name" name="first_name" value="">
-                                                </div>
-                                                <div class="form-group">
-                                                  <input type="text" class="form-control col-form-label-sm" placeholder="Last Name" name="last_name" value="">
-                                                </div>
-                                              </div>
-                                              <input type="email" placeholder="Email" class="form-control" name="email" value="" required>
-
-                                              <div style="display: inline-flex;">
-                                                <div class="text-center  mt-3">
-                                                    <button class="btn btn-custom" type="submit" style = "float: left;">Sign Up<i
-                                                    class="fa fa-paper-plane-o ml-2"></i></button> <br><br>
-                                                </div>
-                                            </div>
-                                        </form>
                                         <div id="msg" style="display: none;">
                                             <p style="color: rgb(0, 0, 0);font-family: 'Montserrat';">Thank you!</p>
                                             
@@ -203,10 +173,7 @@
         {
             document.getElementById("signup").style.display = "none";
             document.getElementById("signup1").style.display = "none";
-            
-            document.getElementById("form-lg").style.display = "none";
-            document.getElementById("form-mb").style.display = "none";
-          
+            document.getElementById("form").style.display = "none";
             document.getElementById("msg").style.display = "block";
             event.preventDefault();
             // alert("text");

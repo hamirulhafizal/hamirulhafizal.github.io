@@ -612,20 +612,10 @@ p {
 }
 
 @media screen and (max-width: 768px) {
-  [class*="form-row"] {
-    display: inline-flex;
-    width: 100%;
-    margin-left: 0px !important;
-  }
-}
-
-@media screen and (max-width: 768px) {
   [class*="form-group"] {
     width: 50%;
   }
 }
-
-
 
 @media only screen and (max-width: 768px){
 
@@ -635,7 +625,6 @@ p {
   margin-top: 1% !important;
 }
 }
-
 
 @media only screen and (max-width: 768px){
 
