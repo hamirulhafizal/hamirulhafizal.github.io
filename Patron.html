@@ -50,15 +50,20 @@
     </div>
 
     <!--Navbar Start-->
-    <nav class="fixed-top" >
+    <!-- <nav class="fixed-top" >
         <div class="container">
-            <!-- LOGO -->
             <a class="navbar-brand" href="Patrons.html">
                 <img src="images/minty.png" alt="" height="20" class="logo-nav img-fluid">
             </a>
         </div>
-    </nav>
+    </nav> -->
     <!-- Navbar End -->
+
+    <nav class="navbar" style="display: block;">
+      <a class="navbar-brand" href="#">
+        <img src="images/minty.png" alt="" height="20" class="logo-nav img-fluid">
+      </a>
+    </nav>
 
     <!-- HOME START -->
     <section class="section home-2-bg" id="home">
@@ -82,7 +87,7 @@
                         </div>
                         <!-- col end -->
 
-                        <div class="col-md-7 y" style="left: 10%;" >
+                        <div class="col-md-5 y" style="left: 10%;" >
                           <div class="mt-40 home-2-content">
                             <h1 class="text-white font-weight-normal home-2-title display-5 mb-0" style="text-align: justify;"><b>Patrons</b></h1>
                              
@@ -102,7 +107,7 @@
 
                               <div class="mt-5">
                                       <!-- Default input name -->
-                                      <form id="form-lg" action="'/mail/'" onsubmit="HideForm()" >
+                                      <form id="form-lg" action="'/mail/'" method="POST" onsubmit="HideForm()" >
                                         <input type="hidden" name="Patron" value="yes">
                                         <input type="hidden" name="source" value=" patron page 18 DEC 2020">
                                           <div class="form-row">
@@ -120,7 +125,7 @@
                                           </div>
                                       </form>
                                   <span>
-                                      <form id="form-mb" action="'/mail/'" onsubmit="HideForm()">
+                                      <form id="form-mb" action="'/mail/'" method="POST" onsubmit="HideForm()">
                                           <div class="form-row" >
                                               <div class="form-group" style="padding-inline-end: 2%;">
                                                 <input type="text" class="form-control col-form-label-sm" placeholder="First Name" name="first_name" value="" >
