@@ -85,11 +85,12 @@
                               Be at the forefront of patronage sign up now and get early access.
                           </p>
 
-                              <div class="mt-5">
+                              <div class="mt-5" id="forms">
                                       <!-- Default input name -->
-                                      <form id="form" action="'/mail/'" method="POST" onsubmit="HideForm()" >
-                                        <input type="hidden" name="Patron" value="yes">
-                                        <input type="hidden" name="source" value=" patron page 18 DEC 2020">
+                                      <form id="form" onsubmit="HideForm()" name="contact">
+                                        <!-- <form id="form" name="contact"> -->
+                                        <input type="hidden" name="patron" value="yes">
+                                        <input type="hidden" name="source" value="patron page 18 DEC 2020">
                                           <div class="form-row">
                                               <div class="form-group col-md-6">
                                                 <input type="text" class="form-control col-form-label-sm" placeholder="First Name" name="first_name" value="" >
@@ -100,7 +101,7 @@
                                             </div>
                                             <input type="email" placeholder="Email" class="form-control" name="email" value="" required >
                                           <div class="text-center mt-3">
-                                            <button class="btn btn-custom" type="submit" style = "float: left;">Sign Up<i
+                                              <button class="btn btn-custom" type="submit" style = "float: left;">Sign Up<i
                                                 class="fa fa-paper-plane-o ml-2"></i></button> <br>
                                           </div>
                                       </form>
@@ -165,13 +166,44 @@
     <script type="text/javascript">
       function HideForm()
       {
-          event.preventDefault();
-          // alert("text");
+          
           document.getElementById("form").style.display = "none";
           document.getElementById("msg").style.display = "block";
           
       }
   </script>
+<!-- 
+  <script>
+    function myFunction() {
+      document.getElementById("form").submit();
+    }
+  </script> -->
+
+  <script>
+    $(function () {
+
+      $('form').on('submit', function (e) {
+
+        e.preventDefault();
+
+        $.ajax({
+          type: 'post',
+          url: '/mail/',
+          data: $('form').serialize(),
+
+          success: function () {
+            alert('form was submitted');
+          },
+          error: function(XMLHttpRequest, textStatus, errorThrown) {
+           alert("some error");
+      } 
+
+        });
+      });
+
+    });
+  </script>
+
 
 </body>
 </html>
