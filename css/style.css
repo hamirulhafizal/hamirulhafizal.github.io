@@ -724,18 +724,29 @@ p {
   }
 }
 
+
 @media screen and (max-width: 768px) {
-  #author-mb {
+ [class*="author-mb"]{
     right: auto !important;
+    width: 108% !important;
+    
   }
 }
+
 
 @media screen and (max-width: 768px) {
   #owner-1 {
     left: 8%;
-    bottom: 3em;
+    bottom: 4vh;
   }
 }
+
+@media screen and (max-width: 768px) {
+  #owner-2 {
+    left: 8%;
+  }
+}
+
 
 
 .home-2-bottom-img {

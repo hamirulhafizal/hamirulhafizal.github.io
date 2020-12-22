@@ -70,7 +70,7 @@
                         <div class="col-md-5 l" >
                             <div class="mt-40 home-2-content position-relative" style="left: 5em;">
                                 <img src="images/home-2-img.jpg" alt="" class="img-fluid d-block home-2-img responsive" >
-                                      <div class="row" id="pp" style="position: relative;" id="author-mb">
+                                      <div class="row" id="pp" style="position: relative;">
                                           <div class="col-md-4" style=" position: relative; ">
                                               <p style="color: rgb(255, 255, 255);" data-toggle="modal" data-target="#myModal-1"><a href="#" style="color: rgb(255, 255, 255);  font-size: 78%;font-family: 'Montserrat'"><u>Privacy Policy</u></a></p>
                                           </div>
@@ -102,33 +102,34 @@
 
                               <div class="mt-5">
                                       <!-- Default input name -->
-                                      <form id="form-lg" onsubmit="HideForm()" >
-                                      <!-- <form id="form-lg" action="comment.php"> -->
+                                      <form id="form-lg" action="'/mail/'" onsubmit="HideForm()" >
+                                        <input type="hidden" name="Patron" value="yes">
+                                        <input type="hidden" name="source" value=" patron page 18 DEC 2020">
                                           <div class="form-row">
                                               <div class="form-group col-md-6">
-                                                <input type="text" class="form-control col-form-label-sm" id="inputPassword4" placeholder="First Name">
+                                                <input type="text" class="form-control col-form-label-sm" placeholder="First Name" name="first_name" value="" >
                                               </div>
                                               <div class="form-group col-md-6">
-                                                <input type="text" class="form-control col-form-label-sm" id="inputPassword4" placeholder="Last Name">
+                                                <input type="text" class="form-control col-form-label-sm" placeholder="Last Name" name="last_name" value="" >
                                               </div>
                                             </div>
-                                            <input type="email" id="defaultFormCardEmailEx" placeholder="Email" class="form-control" required >
+                                            <input type="email" placeholder="Email" class="form-control" name="email" value="" required >
                                           <div class="text-center mt-3">
                                             <button class="btn btn-custom" type="submit" style = "float: left;">Sign Up<i
                                                 class="fa fa-paper-plane-o ml-2"></i></button> <br>
                                           </div>
                                       </form>
                                   <span>
-                                      <form id="form-mb" onsubmit="HideForm()">
+                                      <form id="form-mb" action="'/mail/'" onsubmit="HideForm()">
                                           <div class="form-row" >
                                               <div class="form-group" style="padding-inline-end: 2%;">
-                                                <input type="text" class="form-control col-form-label-sm" id="inputPassword4" placeholder="First Name">
+                                                <input type="text" class="form-control col-form-label-sm" placeholder="First Name" name="first_name" value="" >
                                               </div>
                                               <div class="form-group">
-                                                <input type="text" class="form-control col-form-label-sm" id="inputPassword4" placeholder="Last Name">
+                                                <input type="text" class="form-control col-form-label-sm" placeholder="Last Name" name="last_name" value="">
                                               </div>
                                             </div>
-                                            <input type="email" id="defaultFormCardEmailEx" placeholder="Email" class="form-control" required>
+                                            <input type="email" placeholder="Email" class="form-control" name="email" value=""  required>
 
                                             <div style="display: inline-flex;">
                                               <div class="text-center  mt-3">
@@ -137,8 +138,8 @@
                                               </div>
                                           </div>
                                       </form>
-                                      <div id="msg" style="display: none; color: white;">
-                                          <p>Thank you!</p>
+                                      <div id="msg" style="display: none;">
+                                          <p style="color: white;font-family: 'Montserrat';">Thank you!</p>
                                           
                                       </div>
                                   </span>
