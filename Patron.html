@@ -88,7 +88,6 @@
                               <div class="mt-5" id="forms">
                                       <!-- Default input name -->
                                       <form id="form" onsubmit="HideForm()" name="contact">
-                                        <!-- <form id="form" name="contact"> -->
                                         <input type="hidden" name="patron" value="yes">
                                         <input type="hidden" name="source" value="patron page 18 DEC 2020">
                                           <div class="form-row">
@@ -108,7 +107,6 @@
                                   <span>
                                       <div id="msg" style="display: none;">
                                           <p style="color: white;font-family: 'Montserrat';">Thank you!</p>
-                                          
                                       </div>
                                   </span>
                               </div>
@@ -192,10 +190,10 @@
           data: $('form').serialize(),
 
           success: function () {
-            alert('form was submitted');
+            // alert('form was submitted');
           },
           error: function(XMLHttpRequest, textStatus, errorThrown) {
-           alert("some error");
+           alert(errorThrown);
       } 
 
         });
