@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Minty.Art - Pioneering Digital Patronage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pioneering Digital Patronage" />
+    <meta name="keywords" content="Ethereum , Cryptocurrency, Digital Art, Art Marketplace " />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/Favicon-1.svg">
+
+    <!--Material Icon -->
+    <link rel="stylesheet" type="text/css" href="css/materialdesignicons.min.css" />
+
+    <!-- Pixeden Icon -->
+    <link rel="stylesheet" type="text/css" href="css/pe-icon-7.css" />
+
+    <!--Slider-->
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="css/owl.theme.css" />
+    <link rel="stylesheet" href="css/owl.transitions.css" />
+
+    <!-- css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+</head>
+<body style="background-color: rgb(0, 0, 0);">
+
+    <!-- Loader -->
+    <div id="preloader">
+        <div id="status">
+            <div class="sk-cube-grid">
+                <div class="sk-cube sk-cube1"></div>
+                <div class="sk-cube sk-cube2"></div>
+                <div class="sk-cube sk-cube3"></div>
+                <div class="sk-cube sk-cube4"></div>
+                <div class="sk-cube sk-cube5"></div>
+                <div class="sk-cube sk-cube6"></div>
+                <div class="sk-cube sk-cube7"></div>
+                <div class="sk-cube sk-cube8"></div>
+                <div class="sk-cube sk-cube9"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--Navbar Start-->
+    <nav class="fixed-top" >
+        <div class="container">
+            <!-- LOGO -->
+            <a class="navbar-brand" href="Patrons.html">
+                <img src="images/minty.png" alt="" height="20" class="logo-nav img-fluid">
+            </a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- HOME START -->
+    <section class="section home-2-bg" id="home">
+        <div class="home-center">
+            <div class="home-desc-center">
+                <div class="container">
+                    <div class="row align-items-center" id="reverse-row">
+
+                        <div class="col-md-5 l" >
+                            <div class="mt-40 home-2-content position-relative" style="left: 5em;">
+                                <img src="images/home-2-img.jpg" alt="" class="img-fluid d-block home-2-img responsive" >
+                                      <div class="row" id="pp" style="position: relative;" id="author-mb">
+                                          <div class="col-md-4" style=" position: relative; ">
+                                              <p style="color: rgb(255, 255, 255);" data-toggle="modal" data-target="#myModal-1"><a href="#" style="color: rgb(255, 255, 255);  font-size: 78%;font-family: 'Montserrat'"><u>Privacy Policy</u></a></p>
+                                          </div>
+                                          <div class="col-md-8"style="color: white;text-align: end;position: relative; font-family: 'Montserrat' ;" id="owner-1">
+                                            <p style="color: white; font-size: 78%;  font-family: 'Montserrat'"><i>“Artwork by Tristan Eaton”</i> by Mike Von</p>
+                                          </div>
+                                      </div>
+                            </div>
+                        </div>
+                        <!-- col end -->
+
+                        <div class="col-md-7 y" style="left: 10%;" >
+                          <div class="mt-40 home-2-content">
+                            <h1 class="text-white font-weight-normal home-2-title display-5 mb-0" style="text-align: justify;"><b>Patrons</b></h1>
+                             
+                             <!-- Desktop page-->
+                             <p class="text-white-70 mt-4  mb-0" style="  text-align: left; display: block;" id="lg-text">
+                              We are powering the creativity of  the next generation of artists by leveraging blockchain technologies.<br><br>                
+                              We are supporting digital artists, helping them fund, tokenize and sell their works and connecting them with you, the collectors who share their passions and value their output..<br><br>
+                              Be at the forefront of patronage sign up now and get early access.
+                          </p>
+
+                          <!-- Mobile page-->
+                          <p class="text-white-70 mt-4  mb-0" style="  text-align: left; display: none;" id="mb-text">
+                              We are powering the creativity of  the next generation of artists by leveraging blockchain technologies.<br><br>                
+                              We are supporting digital artists, helping them fund, tokenize and sell their works and connecting them with you, the collectors who share their passions and value their output..<br><br>
+                              Be at the forefront of patronage sign up now and get early access.
+                          </p>
+
+                              <div class="mt-5">
+                                      <!-- Default input name -->
+                                      <form id="form-lg" onsubmit="HideForm()" >
+                                      <!-- <form id="form-lg" action="comment.php"> -->
+                                          <div class="form-row">
+                                              <div class="form-group col-md-6">
+                                                <input type="text" class="form-control col-form-label-sm" id="inputPassword4" placeholder="First Name">
+                                              </div>
+                                              <div class="form-group col-md-6">
+                                                <input type="text" class="form-control col-form-label-sm" id="inputPassword4" placeholder="Last Name">
+                                              </div>
+                                            </div>
+                                            <input type="email" id="defaultFormCardEmailEx" placeholder="Email" class="form-control" required >
+                                          <div class="text-center mt-3">
+                                            <button class="btn btn-custom" type="submit" style = "float: left;">Sign Up<i
+                                                class="fa fa-paper-plane-o ml-2"></i></button> <br>
+                                          </div>
+                                      </form>
+                                  <span>
+                                      <form id="form-mb" onsubmit="HideForm()">
+                                          <div class="form-row" >
+                                              <div class="form-group" style="padding-inline-end: 2%;">
+                                                <input type="text" class="form-control col-form-label-sm" id="inputPassword4" placeholder="First Name">
+                                              </div>
+                                              <div class="form-group">
+                                                <input type="text" class="form-control col-form-label-sm" id="inputPassword4" placeholder="Last Name">
+                                              </div>
+                                            </div>
+                                            <input type="email" id="defaultFormCardEmailEx" placeholder="Email" class="form-control" required>
+
+                                            <div style="display: inline-flex;">
+                                              <div class="text-center  mt-3">
+                                                  <button class="btn btn-custom" type="submit" style = "float: left;">Sign Up<i
+                                                  class="fa fa-paper-plane-o ml-2"></i></button> <br>
+                                              </div>
+                                          </div>
+                                      </form>
+                                      <div id="msg" style="display: none; color: white;">
+                                          <p>Thank you!</p>
+                                          
+                                      </div>
+                                  </span>
+                              </div>
+                          </div>
+                      </div>
+                      <!-- col end -->
+                    </div>
+                    <!-- row end -->
+                </div>
+                <!-- container end -->
+            </div>
+        </div>
+    </section>
+    <!-- HOME END -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+      
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header"style="display: inline-block;">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Terms Conditions</h4>
+          </div>
+          <div class="modal-body">
+            <p>Some text in the modal.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+     <!-- Modal -->
+     <div class="modal fade" id="myModal-1" role="dialog">
+        <div class="modal-dialog">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header" style="display: inline-block;">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title"style=" font-family: walkway; ">Privacy Policy</h4>
+            </div>
+            <div class="modal-body">
+              <div style="height:300px;width:auto;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;  overflow-x: auto;">
+                <p style="font-family: 'Montserrat';">
+                  <div id="div1"></div> 
+
+                </p>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/scrollspy.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/anime.min.js"></script>
+    <!-- Main Js -->
+    <script src="js/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js" integrity="sha384-qlmct0AOBiA2VPZkMY3+2WqkHtIQ9lSdAsAn5RUJD/3vA5MKDgSGcdmIv4ycVxyn" crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function(){
+        $("#pp").click(function(){
+          $("#div1").load("PP/pp.html");
+        });
+      });
+      </script>
+    <script type="text/javascript">
+      function HideForm()
+      {
+          event.preventDefault();
+          // alert("text");
+          document.getElementById("form-lg").style.display = "none";
+          document.getElementById("form-mb").style.display = "none";
+          document.getElementById("msg").style.display = "block";
+          
+      }
+  </script>
+
+</body>
+</html>
